@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% block style %}
+<style>
+    
+</style>
+{% endblock %}
+
+{% block content %}
+    {% include 'navbar.html' %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="card">
+            <div class="card-header">
+                <h5>COVID-19</h5>
+            </div>
+            <div class="card-body">
+                <p>
+                    The outbreak of COVID-19 epidemic is threating human existence everyday with new challenges since
+                    December 2019. The virus causes fever, cough, fatigue and mild to severe respiratory complications that
+                    has killed more than 60 thousand people around the world till 5th April 2020. It has infected more than
+                    1.2 million people around the world till today. According WHO health official 95 percent of patient are in
+                    Mild Condition and 5% are in Critical condition. It will infect much more according to World Health
+                    Organization (WHO) and researchers around the globe. The World Health organization declared the
+                    outbreak as a pandemic on march 11 as the virus reached to every corner of the globe. Furthermore,
+                    recent reports expose an astonishing case fatality rate of 61.5% for critical cases, increasing sharply with
+                    age and for patients with underlying previous health cases. Both the reach and severity of cases is
+                    putting great pressure on the medical services, and readily lead to a shortage of intensive care
+                    resources.
+                </p>
+            </div>
+
+            <div class="col-md-12 text-center mt-5 mb-5">
+                <a href="https://www.worldometers.info/coronavirus/" target="_blank">
+                <img src="static/Covid-1.jpg" alt="" style="width:300px;height:200px;">
+                </a>
+
+                <a href="https://www.trackcorona.live/" target="_blank">
+                    
+                <img src="static/covid-world-map.png" alt="" style="width:300px;height:200px; border: 0;">
+                </a>
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters/" target="_blank">
+                <img src="static/scary.jpg" alt="" style="width:300px;height:200px;">
+                </a>
+                <p><b><i>Please Click on Picture to Know More</i></b></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

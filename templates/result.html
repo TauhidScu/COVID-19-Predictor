@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block style %}
+<style>
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+        
+    <div class="col-md-12 text-center mt-5 mb-5">
+
+        <img src="static/Result.gif" alt="GIF image" style="width:700px;height:450px;">
+        <h2 class="mt-3"><b>Let's Predict Indibidual's Infection Probability with respective Symptoms!</b></h2>
+        <p style="color:#443cb3;"><b>Indibidual's Infection Probability is {{Probability}}%.</b></p>
+
+         <p style="color: darkred;"><b>Thanks and Stay at Home!</b></p>
+        <a href="/predict">
+           <button class="btn btn-primary">Try Again</button>
+         </a>  
+    </div>
+    
+</div>
+{% endblock %}

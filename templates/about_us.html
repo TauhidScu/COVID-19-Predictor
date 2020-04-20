@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{% block style %}
+    <style>
+        img {
+            height: 200px;
+            width: auto;
+            margin-bottom: 20px;
+            border-radius: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container">
+        <div class="col-md-12 text-center">
+            
+            <img src="static/Md.jpg" alt="">
+            <h3>Md Tauhidul Islam</h3>
+            <h4>2016521460553</h4>
+            <h5>Sichuan University</h5>
+            <img src="static/zhang_laoshi.jpg" alt="Zhang Laoshi picture">
+            <h3>Professor Haixian Zhang</h3>
+            <h4><small> Machine Intelligence Lab</small></h4>
+            <h5><small>College of Computer Science, Sichuan University</small></h5>
+            <a href="https://www.machineilab.org/user/Haixian_Zhang/index.html" target="_blank"><b>Personal Homepage:machineilab.org/user/Haixian_Zhang/</b></a>
+        </div>
+    
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+{% block style %}
+    <style>
+        
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h4 {
+            padding-top: 20px;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        
+        <div class="col-md-12 text-center mt-5 mb-5">
+
+            <img src="static/Covid-19.jpeg" alt="" style="width:300px;height:300px;">
+            <img src="static/Cov21.jpg" alt="" style="width:300px;height:300px;">
+        </div>
+
+        <div class="col-md-12 text-center">
+            <h1><b>Let's Fight Together!</b></h1>
+            <h2><em>Covid-19 Predictor</em></h2>
+            <h4>Presented By: </h4>
+            <p><em>Md Tauhidul Islam</em></p>
+            <h5>Supervised By: </h5>
+            <p><em>Professor Haixian Zhang</em></p>
+           
+        </div>
+    </div>
+{% endblock %}

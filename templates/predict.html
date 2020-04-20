@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% include 'navbar.html'  %}
+<div class="container mb-5">
+    <div class="col-md-12 text-center mb-5 mt-4">
+        <h3>Predict Your Infection Probability with Your Symptoms</h3>
+    </div>
+    <form action="http://localhost:5000/result" method="POST">
+    <div class="form-group">
+        <label for="Age">Enter Your Age</label>
+        <select class="form-control custom-select" name="Age" id="0">
+          <option value="0">Young</option>
+          <option value="1">Mid</option>
+          <option value="-1">Old</option>
+  
+        </select>
+      </div>
+      <div class="form-group">
+          <label for="Fever">Enter Your Body Temperature</label>
+          <input type="Text" class="form-control" id="1" name="Fever" placeholder="Enter Fever">
+      </div>
+    
+      <div class="form-group">
+        <label for="DryCough"> Do you have Dry Cough </label>
+        <select class="form-control custom-select" name="DryCough" id="2">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <label for="Fatigue"> Do you feel fatigue </label>
+          <select class="form-control custom-select" name="Fatigue" id="3">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="BreathProb"> Do you have Breathing Problem</label>
+          <select class="form-control custom-select" name="BreathProb" id="4">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="SoreThroat"> Do you feel Sore Throat </label>
+          <select class="form-control custom-select" name="SoreThroat" id="5">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="TravelHis"> Did you travel to USA/Italy/China Within 14 Days </label>
+          <select class="form-control custom-select" name="TravelHis" id="6">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+      </div>
+        
+        
+      <button class="btn btn-primary">Submit</button>
+      
+    </form>
+</div>
+{% endblock %}
